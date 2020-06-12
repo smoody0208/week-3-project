@@ -1,9 +1,15 @@
 .card1 {
   display: none;
+  border: orangered;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .card2 {
   display: none;
+  border: orangered;
+  border-width: 1px;
+  border-style: solid;
 }
 
 #btn {
@@ -13,4 +19,19 @@
 .container {
   padding-top: 5%;
   padding-bottom: 5%;
+  
+}
+
+.jumbotron {
+  border: orangered;
+  border-width: 1px;
+  border-style: solid;
+}
+
+body {
+  background-image: url(https://images.pexels.com/photos/5294/pattern-abstract-honeycomb-metal.jpg?cs=srgb&dl=pattern-abstract-honeycomb-metal-5294.jpg&fm=jpg);
+}
+
+h1 {
+  color: orangered;
 }

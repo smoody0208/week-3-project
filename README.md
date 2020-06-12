@@ -36,15 +36,23 @@ _This webpage takes a number that the user imputs and returns a rang of number u
 
 ## Setup/Installation Requirements
 
-* _Clone Repository in GitHub_
-* _Open Index.html in Virtual Studio Code (or your text editor of choice)_
-* _Create your own repository & push new changes to GitHub_
+Open by downloading:
+1. Download this repository onto your computer by clicking the 'clone or download button'
+2. Double click index.html to open it in your web browser
 
-You may also visit: https://smoody0208.github.io/mr-robogers-neighborhood/
+Open via Bash/GitBash:
+1. Clone this repository onto your computer:
+`https://github.com/smoody0208/week-3-project`
+2. Navigate into the `week-2-project` directory in Visual Studio Code or preferred text editor
+`code .`
+3. Open index.html in Chrome or preferred browser:
+`open index.html`
+
+You may also visit: https://smoody0208.github.io/week-3-project/
 
 ## Known Bugs
 
-_Unable to replace multi digit numbers with expected output, if you run into any bugs please contact Spencer Moody at spencer.moody@outlook.com_
+_No known bugs._
 
 ## Support and contact details
 

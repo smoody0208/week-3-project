@@ -28,11 +28,14 @@ $(document).ready(function() {
     let name = $("input#name").val();
     number = numberInput(result, name);
     $("#result").text(number);
+    $(".result1").fadeIn();
+    $("#btn").fadeIn();
   });
 });
 
 function reverseArray() {
   number.reverse();
   $("#reverseResult").text(number);
-  $("#result").fadeOut();
+  $(".result2").fadeIn();
+  $(".result1").hide();
 }

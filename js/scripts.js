@@ -6,7 +6,18 @@ function numberInput(number){
   for(let index = 0; index <= number.length; index ++) {
     if (index.includes(numberArray[2])){
     result.push(" " + wordArray[2]);
-  } else if 
-    
+  } else if (index.includes(numberArray[1])) {
+    result.push(" " + wordArray[1]);
   }
-}
+  
+    }
+  };
+
+$(document).ready(function(){
+  $("form#formOne").submit(function(event){
+    event.preventDefault();
+    let result = parseInt($("input#number").val());
+    let number = numberInput(result);
+    $("#result").text(number);
+  })
+})

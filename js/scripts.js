@@ -37,5 +37,5 @@ function reverseArray() {
   number.reverse();
   $("#reverseResult").text(number);
   $(".result2").fadeIn();
-  $(".result1").hide();
+  $("#result").hide();
 }

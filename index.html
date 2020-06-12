@@ -10,26 +10,27 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="jumbotron">
-      <div class="container-fluid">
-        <h1 class="display-1">Robot Translator!</h1>
-        <h3>Enter a number below</h3>
-      </div>
-    </div>
     <div class="container">
-      <form id="formOne">
-        <div class="form-group">
-          <label for="name">Please enter a number:</label>
-          <input id="name" class="form-control" type="text">
+      <div class="jumbotron">
+        <h1 class="display-1">Robot Translator</h1>
+        <p class="lead">Please enter a number below!</p>
+        <hr class="my-4">
+        <div class="container">
+          <form id="formOne">
+            <div class="form-group">
+              <label for="name">Please enter your name:</label>
+              <input id="name" class="form-control" type="text" pattern="[A-Za-z]{12, 12}" title="Please insert your name">
+            </div>
+            <div class="form-group">
+              <label for="number">Please enter a number:</label>
+              <input id="number" class="form-control" type="number" min="1" max="500" required>
+            </div>
+            <center><button type="submit" class="btn btn-danger btn-lg">Click to translate!</button></center>
+            <br>
+            <center><button id="btn" class="btn btn-info btn-lg" onclick="reverseArray()">Number Reverser</button></center>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="number">Please enter a number:</label>
-          <input id="number" class="form-control" type="number">
-        </div>
-        <center><button type="submit" class="btn btn-danger">Click to translate!</button></center>
-        <br>
-        <center><button id="btn" class="btn btn-info" onclick="reverseArray()">Number Reverser</button></center>
-      </form>
+      </div>
       <div class="result1">
         <blockquote class="blockquote text-center">
           <p class="mb-0" id="result"></p>
@@ -40,8 +41,8 @@
         <blockquote class="blockquote text-center">
           <p class="mb-0" id="reverseResult"></p>
           <footer class="blockquote-footer">A Robot</footer>
-        </blockquote>
+        </blockquote>    
       </div>  
-    </div>
+    <div>  
   </body>
 </html>

@@ -1,11 +1,11 @@
-function numberInput(number){
+function numberInput(number, name){
   let result = [];
   let numberArray = [1, 2, 3];
-  let wordArray = ["beep", "boop", "won't you be my neighbor?"];
+  let wordArray = ["Beep", "Boop", "Won't you be my neighbor?"];
   
   for (let index = 0; index <= number; index ++) {
-    if (index.number % 3 === 0) {
-      result.push(" " + name + wordArray[0]) 
+    if (index % 3 === 0) {
+    result.push(" " + wordArray[2] + name + " " ) 
   } else if (index.toString().includes(numberArray[2])){
     result.push(" " + wordArray[2]);
   } else if (index.toString().includes(numberArray[1])) {
@@ -23,7 +23,8 @@ $(document).ready(function(){
   $("form#formOne").submit(function(event){
     event.preventDefault();
     let result = parseInt($("input#number").val());
-    let number = numberInput(result);
+    let name = $("input#name").val();
+    let number = numberInput(result, name);
     $("#result").text(number);
   })
 }) 

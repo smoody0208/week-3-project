@@ -1,3 +1,5 @@
+let number;
+
 function numberInput(number, name) {
   let result = [];
   let numberArray = [1, 2, 3];
@@ -19,12 +21,17 @@ function numberInput(number, name) {
   return result;
 }
 
-$(document).ready(function(){
-  $("form#formOne").submit(function(event){
+$(document).ready(function() {
+  $("form#formOne").submit(function(event) {
     event.preventDefault();
     let result = parseInt($("input#number").val());
     let name = $("input#name").val();
-    let number = numberInput(result, name);
+    number = numberInput(result, name);
     $("#result").text(number);
   });
-}) ;
+});
+
+function reverseArray() {
+  number.reverse();
+  $("#reverseResult").text(number)
+}

@@ -33,5 +33,6 @@ $(document).ready(function() {
 
 function reverseArray() {
   number.reverse();
-  $("#reverseResult").text(number)
+  $("#reverseResult").text(number);
+  $("#result").fadeOut();
 }

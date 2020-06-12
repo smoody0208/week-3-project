@@ -1,11 +1,16 @@
-.result1 {
+.card1 {
   display: none;
 }
 
-.result2 {
+.card2 {
   display: none;
 }
 
 #btn {
   display: none;
+}
+
+.container {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }

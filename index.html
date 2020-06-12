@@ -11,11 +11,12 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
+      <div class="jumbotron" class="border border-warning">
         <h1 class="display-1">Robot Translator</h1>
         <p class="lead">Please enter a number below!</p>
         <hr class="my-4">
         <div class="container">
+          
           <form id="formOne">
             <div class="form-group">
               <label for="name">Please enter your name:</label>
@@ -31,18 +32,32 @@
           </form>
         </div>
       </div>
-      <div class="result1">
-        <blockquote class="blockquote text-center">
-          <p class="mb-0" id="result"></p>
-          <footer class="blockquote-footer">A Robot</footer>
-        </blockquote>
+      <div class="card card1">
+        <div class="card-header">
+          Normal Translation
+        </div>
+        <div class="result1">
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p id="result"></p>
+              <footer class="blockquote-footer"><cite title="Source Title">Some Robot</cite></footer>
+            </blockquote>
+          </div>
+        </div>
       </div>  
-      <div class="result2">
-        <blockquote class="blockquote text-center">
-          <p class="mb-0" id="reverseResult"></p>
-          <footer class="blockquote-footer">A Robot</footer>
-        </blockquote>    
-      </div>  
-    <div>  
+      <div class="card card2">
+        <div class="card-header">
+          Reversed Translation
+        </div>
+        <div class="result2">
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p id="reverseResult"></p>
+              <footer class="blockquote-footer"><cite title="Source Title">Some Robot</cite></footer>
+            </blockquote>
+          </div>
+        </div> 
+      </div>    
+    </div>
   </body>
 </html>

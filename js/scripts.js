@@ -28,7 +28,7 @@ $(document).ready(function() {
     let name = $("input#name").val();
     number = numberInput(result, name);
     $("#result").text(number);
-    $(".result1").fadeIn();
+    $(".card1").fadeIn();
     $("#btn").fadeIn();
   });
 });
@@ -36,6 +36,6 @@ $(document).ready(function() {
 function reverseArray() {
   number.reverse();
   $("#reverseResult").text(number);
-  $(".result2").fadeIn();
+  $(".card2").fadeIn();
   $("#result").hide();
 }

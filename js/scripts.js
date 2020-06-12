@@ -3,8 +3,10 @@ function numberInput(number){
   let numberArray = [1, 2, 3];
   let wordArray = ["beep", "boop", "won't you be my neighbor?"];
   
-  for(let index = 0; index <= number; index ++) {
-    if (index.toString().includes(numberArray[2])){
+  for (let index = 0; index <= number; index ++) {
+    if (index.number % 3 === 0) {
+      result.push(" " + name + wordArray[0]) 
+  } else if (index.toString().includes(numberArray[2])){
     result.push(" " + wordArray[2]);
   } else if (index.toString().includes(numberArray[1])) {
     result.push(" " + wordArray[1]);

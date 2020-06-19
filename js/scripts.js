@@ -6,7 +6,7 @@ function numberInput(number, name) {
   let wordArray = ["Beep", "Boop", "Won't you be my neighbor"];
   
   for (let index = 0; index <= number; index ++) {
-    if (index % 3 === 0) {
+    if (index > 0 && index % 3 === 0) {
       result.push(" " + wordArray[2] + ", " + name + "?" ) 
     } else if (index.toString().includes(numberArray[2])) {
       result.push(" " + wordArray[2]);
@@ -37,5 +37,4 @@ function reverseArray() {
   number.reverse();
   $("#reverseResult").text(number);
   $(".card2").fadeIn();
-  $("#result").hide();
 }
